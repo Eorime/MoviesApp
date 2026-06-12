@@ -1,24 +1,14 @@
-//
-//  ContentView.swift
-//  MoviesApp
-//
-//  Created by Elene Dgebuadze on 10/06/2026.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct HomeViewTest: View {
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
-                .foregroundStyle(.tint)
+                .foregroundStyle(Color("YellowPrimary"))
             Text("Hello, world!")
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
