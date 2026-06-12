@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9F84C52FDC5BF100DE4CAD /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD377AF2FDAD74500DE95CB /* API.framework */; };
 		0AD377842FDAD6EF00DE95CB /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3777E2FDAD6EF00DE95CB /* Presentation.framework */; };
 		0AD377952FDAD70100DE95CB /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3778F2FDAD70100DE95CB /* Domain.framework */; };
 		0AD377A52FDAD70F00DE95CB /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3779F2FDAD70F00DE95CB /* Data.framework */; };
 		0AD377B52FDAD74500DE95CB /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD377AF2FDAD74500DE95CB /* API.framework */; };
 		0AD377C32FDAD96A00DE95CB /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3778F2FDAD70100DE95CB /* Domain.framework */; };
 		0AD377C82FDAD97100DE95CB /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3778F2FDAD70100DE95CB /* Domain.framework */; };
-		0AD377CD2FDAD99500DE95CB /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3779F2FDAD70F00DE95CB /* Data.framework */; };
 		0AD377D12FDAD99500DE95CB /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3778F2FDAD70100DE95CB /* Domain.framework */; };
-		0AD377D52FDAD99500DE95CB /* Presentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD3777E2FDAD6EF00DE95CB /* Presentation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0A9F84C72FDC5BF100DE4CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC4B0BF2FD944D70019997A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AD377AE2FDAD74500DE95CB;
+			remoteInfo = API;
+		};
 		0AD377822FDAD6EF00DE95CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0AC4B0BF2FD944D70019997A /* Project object */;
@@ -61,26 +67,12 @@
 			remoteGlobalIDString = 0AD3778E2FDAD70100DE95CB;
 			remoteInfo = Domain;
 		};
-		0AD377CF2FDAD99500DE95CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0AC4B0BF2FD944D70019997A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0AD3779E2FDAD70F00DE95CB;
-			remoteInfo = Data;
-		};
 		0AD377D32FDAD99500DE95CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0AC4B0BF2FD944D70019997A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0AD3778E2FDAD70100DE95CB;
 			remoteInfo = Domain;
-		};
-		0AD377D72FDAD99500DE95CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0AC4B0BF2FD944D70019997A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0AD3777D2FDAD6EF00DE95CB;
-			remoteInfo = Presentation;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -93,59 +85,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		0AD377BA2FDAD77A00DE95CB /* Exceptions for "API" folder in "MoviesApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Common/DIContainerTest.swift,
-				Targets/TestFile.swift,
-			);
-			target = 0AC4B0C62FD944D70019997A /* MoviesApp */;
-		};
-		0AD377BC2FDAD78300DE95CB /* Exceptions for "Data" folder in "MoviesApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Common/Screen/Home/DataSource/DataSourceTest.swift,
-				"Common/Screen/Home/DI/HomeInjection+DataTest.swift",
-				Common/Screen/Home/DTO/DTOTest.swift,
-				Common/Screen/Home/Mapper/HomeMapperTest.swift,
-				Common/Screen/Home/Repository/HomeRepositoryTest.swift,
-			);
-			target = 0AC4B0C62FD944D70019997A /* MoviesApp */;
-		};
-		0AD377BE2FDAD7AE00DE95CB /* Exceptions for "Domain" folder in "MoviesApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Common/Entities/MovieModelTest.swift,
-				Common/Screen/Home/DI/DomainHomeDITest.swift,
-				Common/Screen/Home/UseCases/FetchMoviesUseCaseTest.swift,
-				Common/Screen/Home/UseCases/FilterMoviesUseCaseTest.swift,
-			);
-			target = 0AC4B0C62FD944D70019997A /* MoviesApp */;
-		};
 		0AD377C02FDAD7B500DE95CB /* Exceptions for "Presentation" folder in "MoviesApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Common/DI/InjectionTest.swift,
-				Common/Screen/Favorites/DI/FavoritesDITest.swift,
-				Common/Screen/Favorites/Factory/FavoritesFactoryTest.swift,
-				Common/Screen/Favorites/Router/FavoritesRouterTest.swift,
-				Common/Screen/Favorites/View/FavoritesViewTest.swift,
-				Common/Screen/Favorites/ViewModel/FavoritesViewModelTest.swift,
-				Common/Screen/Home/DI/HomeDITest.swift,
-				Common/Screen/Home/Factory/HomeFactoryTest.swift,
-				Common/Screen/Home/Router/HomeRouterTest.swift,
 				Common/Screen/Home/View/HomeViewTest.swift,
-				Common/Screen/Home/ViewModel/HomeViewModelTest.swift,
-				Common/Screen/MovieDetails/DI/MovieDetailsDITest.swift,
-				Common/Screen/MovieDetails/Factory/MovieDetailsFactoryTest.swift,
-				Common/Screen/MovieDetails/Router/MovieDetailsRouterTest.swift,
-				Common/Screen/MovieDetails/View/MovieDetailsViewTest.swift,
-				Common/Screen/MovieDetails/ViewModel/MovieDetailsViewModelTest.swift,
-				Common/Screen/VideoPlayer/DI/VideoPlayerDITest.swift,
-				Common/Screen/VideoPlayer/Factory/VideoPlayerFactoryTest.swift,
-				Common/Screen/VideoPlayer/Router/VideoPlayerRouterTest.swift,
-				Common/Screen/VideoPlayer/View/VideoPlayerViewTest.swift,
-				Common/Screen/VideoPlayer/ViewModel/VideoPlayerViewModelTest.swift,
 			);
 			target = 0AC4B0C62FD944D70019997A /* MoviesApp */;
 		};
@@ -167,25 +110,16 @@
 		};
 		0AD377902FDAD70100DE95CB /* Domain */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				0AD377BE2FDAD7AE00DE95CB /* Exceptions for "Domain" folder in "MoviesApp" target */,
-			);
 			path = Domain;
 			sourceTree = "<group>";
 		};
 		0AD377A02FDAD70F00DE95CB /* Data */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				0AD377BC2FDAD78300DE95CB /* Exceptions for "Data" folder in "MoviesApp" target */,
-			);
 			path = Data;
 			sourceTree = "<group>";
 		};
 		0AD377B02FDAD74500DE95CB /* API */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				0AD377BA2FDAD77A00DE95CB /* Exceptions for "API" folder in "MoviesApp" target */,
-			);
 			path = API;
 			sourceTree = "<group>";
 		};
@@ -223,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD377C82FDAD97100DE95CB /* Domain.framework in Frameworks */,
+				0A9F84C52FDC5BF100DE4CAD /* API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,14 +166,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD377D12FDAD99500DE95CB /* Domain.framework in Frameworks */,
-				0AD377CD2FDAD99500DE95CB /* Data.framework in Frameworks */,
-				0AD377D52FDAD99500DE95CB /* Presentation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A9F84C42FDC5BF100DE4CAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0AC4B0BE2FD944D70019997A = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +187,7 @@
 				0AD377902FDAD70100DE95CB /* Domain */,
 				0AD377A02FDAD70F00DE95CB /* Data */,
 				0AD377B02FDAD74500DE95CB /* API */,
+				0A9F84C42FDC5BF100DE4CAD /* Frameworks */,
 				0AC4B0C82FD944D70019997A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -383,6 +324,7 @@
 			);
 			dependencies = (
 				0AD377CB2FDAD97200DE95CB /* PBXTargetDependency */,
+				0A9F84C82FDC5BF100DE4CAD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				0AD377A02FDAD70F00DE95CB /* Data */,
@@ -406,9 +348,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0AD377D02FDAD99500DE95CB /* PBXTargetDependency */,
 				0AD377D42FDAD99500DE95CB /* PBXTargetDependency */,
-				0AD377D82FDAD99500DE95CB /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				0AD377B02FDAD74500DE95CB /* API */,
@@ -547,6 +487,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0A9F84C82FDC5BF100DE4CAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AD377AE2FDAD74500DE95CB /* API */;
+			targetProxy = 0A9F84C72FDC5BF100DE4CAD /* PBXContainerItemProxy */;
+		};
 		0AD377832FDAD6EF00DE95CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0AD3777D2FDAD6EF00DE95CB /* Presentation */;
@@ -577,20 +522,10 @@
 			target = 0AD3778E2FDAD70100DE95CB /* Domain */;
 			targetProxy = 0AD377CA2FDAD97200DE95CB /* PBXContainerItemProxy */;
 		};
-		0AD377D02FDAD99500DE95CB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0AD3779E2FDAD70F00DE95CB /* Data */;
-			targetProxy = 0AD377CF2FDAD99500DE95CB /* PBXContainerItemProxy */;
-		};
 		0AD377D42FDAD99500DE95CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0AD3778E2FDAD70100DE95CB /* Domain */;
 			targetProxy = 0AD377D32FDAD99500DE95CB /* PBXContainerItemProxy */;
-		};
-		0AD377D82FDAD99500DE95CB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0AD3777D2FDAD6EF00DE95CB /* Presentation */;
-			targetProxy = 0AD377D72FDAD99500DE95CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -734,7 +669,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
@@ -778,7 +713,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
@@ -1056,7 +991,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1096,7 +1031,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
