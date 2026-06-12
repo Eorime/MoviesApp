@@ -1,13 +1,7 @@
-//
-//  ContentView.swift
-//  MoviesApp
-//
-//  Created by Elene Dgebuadze on 10/06/2026.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct HomeViewTest: View {
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -17,8 +11,4 @@ struct ContentView: View {
         }
         .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
